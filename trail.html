@@ -1,16 +1,113 @@
 <!DOCTYPE html>
 <html>
+  <style>
+    #demo {
+      font-size: larger;
+      color: rgb(255, 61, 223);
+      animation: slideInFromtop 10s ease-in;
+    }
+    #demo1 {
+      font-size: larger;
+      color: violet;
+      animation: slideInFromRight 10s ease-in-out;
+    }
+    #demo2 {
+      font-size: larger;
+      color: indigo;
+      animation: slideInFromtop1 10s ease-in;
+    }
+    #demo3 {
+      font-size: larger;
+      color: blue;
+      animation: slideInFromRight 10s ease-in;
+    }
+    #demo4 {
+      font-size: larger;
+      color: green;
+      animation: slideInFromtop 10s ease-in;
+    }
+    #demo5 {
+      font-size: larger;
+      color: yellow;
+      animation: slideInFromRight 10s ease-in;
+    }
+    #demo6 {
+      font-size: larger;
+      color: orange;
+      animation: slideInFromtop1 10s ease-in;
+    }
+    #demo7 {
+      font-size: larger;
+      color: red;
+      animation: slideInFromRight 10s ease-in;
+    }
+    @keyframes slideInFromRight {
+      0% {
+        transform: translatex(000%);
+      }
+
+      100% {
+        transform: translateX(50%);
+      }
+    }
+    @keyframes slideInFromtop1 {
+      0% {
+        transform: translatex(00%);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    @keyframes slideInFromtop {
+      0% {
+        transform: translatey(0%);
+      }
+
+      100% {
+        transform: translatey(1000%);
+      }
+    }
+  </style>
   <body>
     <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
 
     <script>
       let text = "";
+      let text1 = "";
+      let text2 = "";
+      let text3 = "";
+      let text4 = "";
+      let text5 = "";
+      let text6 = "";
+      let text7 = "";
 
-      for (let i = 0; i < 250000; i++) {
-        text += "Sorry " + i;
+      for (let i = 0; i < 25; i++) {
+        text += "Sorry ";
+        text1 += "Sorry ";
+        text2 += "Sorry ";
+        text3 += "Sorry ";
+        text4 += "Sorry ";
+        text5 += "Sorry ";
+        text6 += "Sorry ";
+        text7 += "Sorry ";
       }
 
       document.getElementById("demo").innerHTML = text;
+      document.getElementById("demo1").innerHTML = text1;
+      document.getElementById("demo2").innerHTML = text2;
+      document.getElementById("demo3").innerHTML = text3;
+      document.getElementById("demo4").innerHTML = text4;
+      document.getElementById("demo5").innerHTML = text5;
+      document.getElementById("demo6").innerHTML = text6;
+      document.getElementById("demo7").innerHTML = text7;
     </script>
   </body>
 </html>
