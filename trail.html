@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      let text = "";
+
+      for (let i = 0; i < 250000; i++) {
+        text += "Sorry " + i;
+      }
+
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>
